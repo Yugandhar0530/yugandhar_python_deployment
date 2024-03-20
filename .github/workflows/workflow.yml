@@ -45,7 +45,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name shivansh_application \
-            --deployment-group-name shivansh_application_group \
+            --application-name endterm_application \
+            --deployment-group-name endterm_cc_deploymentgroup \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
